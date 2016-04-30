@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Insert title here</title>
-</head>
-<body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cadastro</title>
+</h:head>
 
-</body>
+<h:body>
+	<h:form>  
+ 
+ 
+    <p:menubar>
+    
+     <p:submenu>
+      
+       <p:menuitem value="Chamados Aberto" /> 
+       <p:menuitem value="Chamados fechados" /> 
+     
+     </p:submenu>    
+    
+    
+    
+        <p:submenu label="File" icon="ui-icon-document">
+            <p:submenu label="New" icon="ui-icon-contact">
+                <p:menuitem value="Project" url="#" />
+                <p:menuitem value="Other" url="#" />
+            </p:submenu>
+            <p:menuitem value="Open" url="#" />
+            <p:separator />
+            <p:menuitem value="Quit" url="#" />
+        </p:submenu>
+             <f:facet name="options">
+            <p:inputText style="margin-right:10px" placeholder="Pesquisar"/>
+            <p:commandButton type="button" value="Pesquisar" icon="fa-floppy-o [&#xf0c7;]" />
+        </f:facet>
+    </p:menubar>     
+	</h:form>
+	<h:form>
+    <p:growl autoUpdate="true"/>
+ 
+    <p:panelMenu style="width:300px">
+        <p:submenu label="Ajax Menuitems">
+            <p:menuitem value="Save"  icon="ui-icon-disk" />
+            <p:menuitem value="Update"   icon="ui-icon-arrowrefresh-1-w" />
+        </p:submenu>
+        <p:submenu label="Non-Ajax Menuitem">
+            <p:menuitem value="Delete"   ajax="false" icon="ui-icon-close"/>
+        </p:submenu>
+        <p:separator />
+        <p:submenu label="Navigations" >
+            <p:submenu label="Links" icon="ui-icon-extlink">
+                <p:submenu label="PrimeFaces" icon="ui-icon-heart">
+                    <p:menuitem value="Home" url="http://www.primefaces.org" icon="ui-icon-home" />
+                    <p:menuitem value="Docs" url="http://www.primefaces.org/documentation" icon="ui-icon-document" />
+                    <p:menuitem value="Download" url="http://www.primefaces.org/downloads" icon="ui-icon-arrowthick-1-s" />
+                    <p:menuitem value="Support" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
+                </p:submenu>
+            </p:submenu>
+            <p:menuitem value="Mobile"  icon="ui-icon-signal" />
+        </p:submenu>
+    </p:panelMenu>
+</h:form>
+	 
+
+</h:body>
 </html>
