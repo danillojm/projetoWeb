@@ -1,12 +1,15 @@
 package br.com.projetoWeb.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+@Entity
 @Table(name ="tb_usuario")
-public class Usuario {
+public class Usuario extends GenericModel {
 
 	
 	

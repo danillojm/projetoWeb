@@ -2,9 +2,11 @@ package br.com.projetoWeb.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
+@Table(name="tb_estado")
 public class Estado extends GenericModel {
 	@Column(length = 2, nullable = false)
 	private String sigla;
