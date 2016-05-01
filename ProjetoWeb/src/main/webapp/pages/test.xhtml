@@ -1,45 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+
+
+	<ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Cadastro</title>
-</h:head>
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	templates="/templates/modelo">
+	
+	<ui:define name="conteudo">
 
-<h:body>
-	<h:form>  
- 
- 
-    <p:menubar>
-    
-     <p:submenu>
-      
-       <p:menuitem value="Chamados Aberto" /> 
-       <p:menuitem value="Chamados fechados" /> 
-     
-     </p:submenu>    
-    
-    
-    
-        <p:submenu label="File" icon="ui-icon-document">
-            <p:submenu label="New" icon="ui-icon-contact">
-                <p:menuitem value="Project" url="#" />
-                <p:menuitem value="Other" url="#" />
-            </p:submenu>
-            <p:menuitem value="Open" url="#" />
-            <p:separator />
-            <p:menuitem value="Quit" url="#" />
-        </p:submenu>
-             <f:facet name="options">
-            <p:inputText style="margin-right:10px" placeholder="Pesquisar"/>
-            <p:commandButton type="button" value="Pesquisar" icon="fa-floppy-o [&#xf0c7;]" />
-        </f:facet>
-    </p:menubar>     
-	</h:form>
+	<title>Cadastro</title>
+
 	<h:form>
+
     <p:growl autoUpdate="true"/>
  
     <p:panelMenu style="width:300px">
@@ -66,5 +41,6 @@
 </h:form>
 	 
 
-</h:body>
-</html>
+</ui:define>
+
+</ui:composition>
