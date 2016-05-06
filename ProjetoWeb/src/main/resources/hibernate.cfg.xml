@@ -19,6 +19,7 @@
 		 <mapping class="br.com.projetoWeb.model.Cidade" />
   		<mapping class="br.com.projetoWeb.model.Pessoa" />
         <mapping class="br.com.projetoWeb.model.Usuario" />
+        <mapping class="br.com.projetoWeb.model.Chamados"/>
       
 	</session-factory>
 </hibernate-configuration>
